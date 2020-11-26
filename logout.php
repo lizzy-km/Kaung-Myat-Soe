@@ -1,0 +1,10 @@
+<?php 
+session_start();
+if(isset($_SESSION['auth'])){
+    header("location:bst.php");
+}
+//session_destroy();
+   else{
+       header("location:login.php");
+   } 
+?>
